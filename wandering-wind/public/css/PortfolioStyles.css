@@ -106,12 +106,6 @@ body{
     animation: fadeIn 4s;
     overflow: hidden;
 }
-#img{
-    width: 100%;
-    height: 500px;
-    animation: fadeIn 4s;
-
-}
 #discript{
     width: 50%;
     text-align: center;
@@ -155,13 +149,9 @@ nav a:active{
         margin: 0;
     }
     #vid{
-        animation: fadeIn 4s;
-    }
-    #img{
         height: 50%;
-        width: 50vh;
+        width: 90%;
         animation: fadeIn 4s;
-    
     }
     #discript{
         width: 85%;
@@ -196,12 +186,6 @@ nav a:active{
         height: 30vh;
         width: 90%;
         animation: fadeIn 4s;
-    }
-    #img{
-        height: 1%;
-        width: 175%;
-        animation: fadeIn 4s;
-    
     }
     #discript{
         width: 90%;
