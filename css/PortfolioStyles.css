@@ -157,10 +157,9 @@ nav a:active{
         height: 50%;
         width: 90%;
         animation: fadeIn 5s;
-
     }
     #vid{
-        height: 50vh;
+        height: 30vh;
         width: 90%;
         animation: fadeIn 5s;
     }
