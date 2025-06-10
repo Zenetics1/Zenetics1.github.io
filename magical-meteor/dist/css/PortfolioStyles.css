@@ -1,0 +1,271 @@
+*
+{
+ box-sizing: border-box;
+ margin: 0;
+ padding: 0;
+ font-family: 'Courier New', Courier, monospace;
+}
+nav{
+    background-color: whitesmoke;
+    box-shadow: 4px 3px 5px rgba(0, 0, 0, 0.5);
+    width: 100%;
+}
+nav ul{
+    list-style: none;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+nav li{
+    height: 95px;
+}
+nav a{
+    height: 100%;
+    padding: 0px 25px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #000;
+    font-size: 1.2em;
+}
+nav .navbar li:not(:first-child){
+    position: relative;
+    right: 80px;
+    animation: fadeIn 4s;
+}
+nav li:first-child{
+    margin-right: auto;
+    padding: 0px 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    animation: fadeIn 4s;
+}
+.sidebar{
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 300px;
+    z-index: 999;
+    background-color: aliceblue;
+    backdrop-filter: blur(10px);
+    box-shadow: -5px 0 10px rgba(0 , 0 , 0 ,0.5);
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+nav .sidebar li:first-child
+{
+    margin: 0;
+    padding: 0;
+}
+.logo
+{   
+    color: #cc8f00;
+    font-family:monospace;
+    font-weight: bold;
+    font-style: italic;
+    font-size: 2.5em;
+    align-items: center;
+    text-align: left;
+}
+body{
+    min-height: 125vh;
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: black;
+}
+.main{
+    display: flexbox;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0;
+    z-index: 1;
+    width: fit-content;
+    overflow-x: hidden;
+}
+.header{
+    text-align: center;
+    font-size: 7vh;
+    color: aliceblue;
+    padding-top: 30px;
+    animation: fadeIn 5s;
+}
+.group{
+    transform: translateX(24%);
+    padding: 2%;
+    margin: 0;
+}
+#vid{
+    height: 450px;
+    width: 50%;
+    animation: fadeIn 4s;
+    overflow: hidden;
+}
+#discript{
+    width: 50%;
+    text-align: center;
+    margin-top: 2%;
+    font-size: 1.5rem; 
+    color: aliceblue;
+    animation: fadeIn 4s;
+}
+
+nav a:hover{
+    text-decoration: underline;
+    font-weight: bold;
+}
+nav a:active{
+    color: burlywood;
+}
+.menu-button{
+    display: none;
+}
+@media screen and (max-width:900px){
+    .hideOnMobile{
+        display: none;
+    }
+    .menu-button{
+        position: relative;
+        left: 0;
+        size: 100%;
+        display: block;
+    }
+    .title{
+        text-align: center;
+        font-size: 5.5vh;
+        color: aliceblue;
+        padding-top: 30px;
+        animation: fadeIn 5s;
+    }
+    .group{
+        position: relative;
+        transform: translate(5%, 2%);
+        padding: 5%;
+        margin: 0;
+    }
+    #vid{
+        height: 50%;
+        width: 90%;
+        animation: fadeIn 4s;
+    }
+    #discript{
+        width: 85%;
+        margin-top: 2%;
+        text-align: center;
+        font-size: 2.5vh; 
+        color: aliceblue;
+        animation: fadeIn 4s;
+    }
+}
+@media screen and (max-width:520px){
+    .hideOnMobile{
+        display: none;
+    }
+    .menu-button{
+        position: relative;
+        left: 0;
+        size: 100%;
+        display: block;
+    }
+    .header{
+        font-size: 1.9rem;
+        color: aliceblue;
+        padding-top: 30px;
+    }
+    .group{
+        transform: translateX(5%);
+        padding: 2%;
+        margin: 0;
+    }
+    #vid{
+        height: 30vh;
+        width: 90%;
+        animation: fadeIn 4s;
+    }
+    #discript{
+        width: 90%;
+        text-align: center;
+        margin-top: 2%;
+        font-size: 1rem; 
+        color: aliceblue;
+        animation: fadeIn 4s;
+    }
+}
+
+.animate {
+    animation-duration: 1s;
+    animation-fill-mode: both;
+}
+.animate--infinite{
+    animation-iteration-count: infinite;
+}
+.animate--delay-1s{
+    animation-delay: 1s;
+}
+.animate--fast{
+    animation-duration: .8s;
+}
+.animate--slow{
+    animation-duration: 2s;
+}
+@keyframes slideInLeft{
+    from{
+        transform: translateX(-300px);
+    }
+    to{
+        transform: translateX(0);
+    }
+}
+.slideInLeft{
+    animation-name: slideInLeft;
+    animation-timing-function: ease-in;
+}
+
+@keyframes slideInRight{
+    from{
+        transform: translateX(500px);
+    }
+    to{
+        transform: translateX(0);
+    }
+}
+.slideInRight{
+    animation-name: slideInRight;
+    animation-timing-function: ease-in;
+}
+
+@keyframes slideInUp{
+    from{
+        transform: translateY(200px);
+    }
+    to{
+        transform: translateY(0);
+    }
+}
+.slideInUp{
+    animation-name: slideInUp;
+    animation-timing-function: ease-in;
+}
+
+@keyframes slideInDown{
+    from{
+        transform: translateY(-20px);
+    }
+    to{
+        transform: translateY(0);
+    }
+}
+.slideInDown{
+    animation-name: slideInDown;
+    animation-timing-function: ease-in;
+}
+
+@keyframes fadeIn{
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+}
