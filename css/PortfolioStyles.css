@@ -32,7 +32,7 @@ nav a{
 nav .navbar li:not(:first-child){
     position: relative;
     right: 80px;
-    animation: fadeIn 4s;
+    animation: fadeIn 3s;
 }
 nav li:first-child{
     margin-right: auto;
@@ -40,7 +40,7 @@ nav li:first-child{
     display: flex;
     align-items: center;
     justify-content: center;
-    animation: fadeIn 4s;
+    animation: fadeIn 3s;
 }
 .sidebar{
     position: fixed;
@@ -87,13 +87,14 @@ body{
     z-index: 1;
     width: fit-content;
     overflow-x: hidden;
+    overflow-y: hidden;
 }
 .header{
     text-align: center;
     font-size: 7vh;
     color: aliceblue;
     padding-top: 30px;
-    animation: fadeIn 5s;
+    animation: fadeIn 3s;
 }
 .group{
     transform: translateX(24%);
@@ -101,12 +102,13 @@ body{
     margin: 0;
 }
 #img{
-    animation: fadeIn 4s;
+    animation: fadeIn 5s;
 }
 #vid{
-    height: 450px;
+    height: 50vh;
     width: 50%;
-    animation: fadeIn 4s;
+    text-align: center;
+    animation: fadeIn 5s;
     overflow: hidden;
 }
 #discript{
@@ -115,7 +117,7 @@ body{
     margin-top: 2%;
     font-size: 1.5rem; 
     color: aliceblue;
-    animation: fadeIn 4s;
+    animation: fadeIn 5s;
 }
 
 nav a:hover{
@@ -151,15 +153,16 @@ nav a:active{
         padding: 5%;
         margin: 0;
     }
-    #vid{
+    img{
         height: 50%;
         width: 90%;
-        animation: fadeIn 4s;
+        animation: fadeIn 5s;
+
     }
-     #img{
-        height: 50%;
+    #vid{
+        height: 50vh;
         width: 90%;
-        animation: fadeIn 4s;
+        animation: fadeIn 5s;
     }
     #discript{
         width: 85%;
@@ -167,7 +170,7 @@ nav a:active{
         text-align: center;
         font-size: 2.5vh; 
         color: aliceblue;
-        animation: fadeIn 4s;
+        animation: fadeIn 5s;
     }
 }
 @media screen and (max-width:520px){
@@ -190,15 +193,10 @@ nav a:active{
         padding: 2%;
         margin: 0;
     }
-    #img{
-        height: 30vh;
-        width: 90%;
-        animation: fadeIn 4s;
-    }
     #vid{
         height: 30vh;
         width: 90%;
-        animation: fadeIn 4s;
+        animation: fadeIn 5s;
     }
     #discript{
         width: 90%;
@@ -206,7 +204,7 @@ nav a:active{
         margin-top: 2%;
         font-size: 1rem; 
         color: aliceblue;
-        animation: fadeIn 4s;
+        animation: fadeIn 5s;
     }
 }
 
