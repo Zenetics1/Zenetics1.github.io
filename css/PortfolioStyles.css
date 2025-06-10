@@ -100,6 +100,9 @@ body{
     padding: 2%;
     margin: 0;
 }
+#img{
+    animation: fadeIn 4s;
+}
 #vid{
     height: 450px;
     width: 50%;
@@ -153,6 +156,11 @@ nav a:active{
         width: 90%;
         animation: fadeIn 4s;
     }
+     #img{
+        height: 50%;
+        width: 90%;
+        animation: fadeIn 4s;
+    }
     #discript{
         width: 85%;
         margin-top: 2%;
@@ -181,6 +189,11 @@ nav a:active{
         transform: translateX(5%);
         padding: 2%;
         margin: 0;
+    }
+    #img{
+        height: 30vh;
+        width: 90%;
+        animation: fadeIn 4s;
     }
     #vid{
         height: 30vh;
