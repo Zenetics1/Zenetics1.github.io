@@ -1,3 +1,7 @@
+---
+
+---
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -6,7 +10,7 @@
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
     <meta name="author" content="WZK">
     <link rel="icon" type="image/x-icon" href="/img/WZK Favicon (1).png">
-    <link rel="stylesheet" href="css/HomeStyles.css" type="text/css">
+    <link rel="stylesheet" href="/css/HomeStyles.css" type="text/css">
     <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
     <title>WizK</title>
 </head>
@@ -14,22 +18,22 @@
     <nav>
         <ul class="animate slideInDown animate--fast navbar">
             <li class="logo">WIZK</li>
-            <li class="hideOnMobile"><a href="index.html">About Me</a></li>
-            <li class="hideOnMobile"><a href="Portfoliopage.html">Portfolio</a></li>
+            <li class="hideOnMobile"><a href="/">About Me</a></li>
+            <li class="hideOnMobile"><a href="/portfolio">Portfolio</a></li>
             <li class="hideOnMobile"><a href="mailto:wizktec@gmail.com">Contact Me</a></li>
             <li class="menu-button" onclick=showSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="30" viewBox="0 -960 960 960" width="30"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
         </ul>
         <ul class="sidebar">
             <li onclick=hideSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="30" viewBox="0 -960 960 960" width="30"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
-            <li><a href="index.html">About Me</a></li>
-            <li><a href="Portfoliopage.html">Portfolio</a></li>
+            <li><a href="/">About Me</a></li>
+            <li><a href="/portfolio">Portfolio</a></li>
             <li><a href="mailto:wizktec@gmail.com">Contact Me</a></li>
         </ul>
     </nav>
 
     <div class="animate slideInUp animate--fast main">
             <div class ="discript">
-                <H1>My name is William!</H1>
+                <h1>My name is William!</h1>
                 <h3>I'm <span class="text"></span></h2>
                 <p>I am currently a 16 year old high school student who has a
                     passion for technology and computer hardware. I enjoy coming up
@@ -37,7 +41,7 @@
                     is the place where I can share progress on all my projects!<p>
                 </div>
     </div>
-    <script src="js/main.js"></script>
-    <script src="js/sidebar.js"></script>
+    <script src="/js/main" defer></script>
+    <script src="/js/sidebar" is:inline></script>
 </body>
 </html>
