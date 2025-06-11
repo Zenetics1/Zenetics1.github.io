@@ -1,0 +1,51 @@
+---
+import HMHeader from '../components/NavBar.astro';
+import Footer from '../components/Footer.astro';
+import Slider from '../components/Slider.astro';
+
+interface Props {
+	title: string;
+}
+
+const { title } = Astro.props;
+---
+
+<!doctype html>
+<html transition:animate="fade" lang="en" >
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="description" content="WizK Personal Portfolio" />
+		<meta name="viewport" content="width=device-width, intial-scale=1.0" />
+		<link rel="icon" type="image/svg+xml" href="" />
+		<meta name="generator" content={Astro.generator} />
+		<title>{title}</title>
+	</head>
+	<body transition:animate="none" class="bg-fixed bg-black bg-no-repeat bg-cover overflow-x-hidden">
+        <div class="box-border h-24 w-screen">
+            <HMHeader webTitle='WIZK' hrefAM='/' hrefPF='/portfolio/' hrefCM='mailto:wizktec@gmail.com'></HMHeader>
+        </div>
+        <div>
+            <h1 class="text-white text-center p-5 m-0 text-7xl font-mono">Projects</h1>
+        </div>
+        <div class="h-full flex flex-wrap gap-11 justify-center p-6 w-screen sm:flex-row">
+            <Slider VidLink='https://www.youtube.com/embed/W6iDsVtBoCA?si=vwLcox8POMxaXWMe' header='Arduino Documentary #1'> 
+                This is the first video in a series I am starting where I learn how to use the Arduino, I hope to learn as much as I can about circuitry and electronics.
+            </Slider>
+            <Slider VidLink='https://www.youtube.com/embed/JbIsC9RpNSs?si=t2AgwnW28QyS_yIh' header='Making an Arcade Machine Pt.1'> 
+                Built over the summer of 2024, this is my take on a bartop arcade machine. It utilizes a used monitor and Raspberry Pi 4 2GB to run Retropie, allowing me to run classic arcade emulators.
+            </Slider>
+            <Slider VidLink='https://www.youtube.com/embed/qwvoPNThrJ0?si=2co4z_nNYGWNb0ka' header='Making an Arcade Machine Pt.2'> 
+                Built over the summer of 2024, this is my take on a bartop arcade machine. The final video for the two part series.
+            </Slider>
+            <Slider VidLink='https://www.youtube.com/embed/5aZ5x-nAvVA?si=rCuxRFFsUHO-BRuS' header='Lava Escape'> 
+                This is the first game that I have fully completed and tested. It uses the Java language to create a game where the user is a block trying to escape the rising lava in a volcano.
+            </Slider>
+            <Slider VidLink='https://www.youtube.com/embed/LZaWQyHEUK4?si=mJN-MjZn_-9hBD_c' header='CREATE Design Challenge: BeatTrends'> 
+                This is a Project where I and a group of students used Python data visualization/manipulation libraries to create graphs based on music data collected between the early 90s to 2020.
+            </Slider>
+        </div> 
+        <div>
+            <Footer></Footer>
+        </div>
+	</body>
+</html>

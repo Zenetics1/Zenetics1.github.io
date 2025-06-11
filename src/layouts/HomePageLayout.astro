@@ -1,0 +1,37 @@
+---
+import HMHeader from '../components/NavBar.astro';
+import Footer from '../components/Footer.astro';
+
+
+interface Props {
+	title: string;
+}
+
+const { title } = Astro.props;
+---
+
+<!doctype html>
+<html transition:animate="fade" lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="description" content="WiZK About Me" />
+		<meta name="viewport" content="width=device-width, intial-scale=1.0" />
+		<link rel="icon" type="image/svg+xml" href="" />
+		<meta name="generator" content={Astro.generator} />
+		<title>{title}</title>
+		<script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+	</head>
+	<body transition:animate="none" class="bg-fixed bg-black bg-no-repeat bg-cover overflow-x-hidden sm:overflow-hidden" style="background-image:url(/webimg2.jpg);">
+		<div class="h-screen max-w-full flex-col">
+			<div class="box-border h-24 w-screen">
+				<HMHeader webTitle='WIZK' hrefAM='/' hrefPF='/portforlio/' hrefCM='mailto:wizktec@gmail.com'></HMHeader>
+			</div>
+			<div class="box-border h-full w-screen sm:h-[75%]">
+				<slot />
+			</div>
+			<div class="relative box-border h-28 w-screen">
+				<Footer></Footer>
+			</div>
+		</div>
+	</body>
+</html>

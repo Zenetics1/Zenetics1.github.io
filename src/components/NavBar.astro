@@ -1,0 +1,28 @@
+---
+interface Props {
+	webTitle: string;
+	hrefAM: string;
+	hrefPF: string;
+	hrefCM: string;
+}
+
+const { webTitle, hrefAM, hrefPF, hrefCM } = Astro.props;
+---
+		<nav class="fixed bg-white w-screen font-mono sm:p-2 m-0 h-24 flex items-center z-50">
+			<div class="flex items-center">
+				<span class="transition ease-in-out delay-75 hover:scale-110 text-bold text-transparent bg-clip-text bg-gradient-to-r from-red-800 via-red-500 to-yellow-500 inline-block justify-start pl-10 text-5xl sm:text-6xl">
+					{webTitle}
+				</span>
+			</div>
+			<ul class="flex items-center gap-11 p-0 ml-auto mr-10 text-md sm:text-2xl">
+				<li class="transition ease-in-out delay-75 hover:scale-105 hover:text-red-500 hidden sm:flex"> 
+					<a href={hrefAM}>About Me</a>
+				</li>
+				<li class="transition ease-in-out delay-75 hover:text-red-500 hover:scale-105 hidden sm:flex"> 
+					<a href={hrefPF}>Portfolio</a>
+				</li>
+				<li class="transition ease-in-out delay-75 hover:text-red-500 hover:scale-105 hidden sm:flex"> 
+					<a href={hrefCM} >Contact</a>
+				</li>
+			</ul>
+		</nav>
