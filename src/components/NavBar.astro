@@ -20,7 +20,7 @@ const { webTitle, hrefAM, hrefPF, hrefCM } = Astro.props;
 					<a href={hrefAM}>About Me</a>
 				</li>
 				<li class="transition ease-in-out delay-75 hover:text-red-500 hover:scale-105 hidden sm:flex"> 
-					<a href={hrefPF}>Portfolio</a>
+					<a href={hrefPF} data-astro-prefetch="hover">Portfolio</a>
 				</li>
 				<li class="transition ease-in-out delay-75 hover:text-red-500 hover:scale-105 hidden sm:flex"> 
 					<a href={hrefCM} >Contact</a>
