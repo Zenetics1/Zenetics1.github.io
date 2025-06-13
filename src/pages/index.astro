@@ -16,7 +16,8 @@ import "../styles/global.css";
 </HMLayout>
 
 <script>
-	import Typed from 'typed.js';
+    import Typed from 'typed.js';
+    document.addEventListener("astro:page-load", (event) => {
     const typed = new Typed('#typed-text', {
     strings:["Dreamer", "Innovator", "Team Player"],
     typeSpeed:150,
@@ -24,6 +25,8 @@ import "../styles/global.css";
     backDelay:1000,
     loop:true
 });
+    })
+	
 </script>
 
 <script is:inline type="text/javascript">
