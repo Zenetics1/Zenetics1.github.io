@@ -4,7 +4,7 @@ import Footer from '../components/Footer.astro';
 import Slider from '../components/Slider.astro';
 import "../styles/global.css";
 import { ClientRouter } from "astro:transitions";
-
+import { fade } from 'astro:transitions';
 interface Props {
 	title: string;
 }
@@ -13,7 +13,7 @@ const { title } = Astro.props;
 ---
 
 <!doctype html>
-<html transition:animate="fade" lang="en" >
+<html transition:animate={fade({duration: "0.9s"})} lang="en" >
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="description" content="WizK Personal Portfolio" />
@@ -23,8 +23,8 @@ const { title } = Astro.props;
 		<title>{title}</title>
         <ClientRouter/>
 	</head>
-	<body transition:animate="none" class="bg-fixed bg-black bg-no-repeat bg-cover overflow-x-hidden">
-        <div class="box-border h-24 w-screen">
+	<body transition:animate={fade({duration: "0.9s"})} class="bg-fixed bg-black bg-no-repeat bg-cover overflow-x-hidden">
+        <div transition:animate="none" class="box-border h-24 w-screen">
             <HMHeader webTitle='WIZK' hrefAM='/' hrefPF='/portfolio' hrefCM='mailto:wizktec@gmail.com'></HMHeader>
         </div>
         <div>

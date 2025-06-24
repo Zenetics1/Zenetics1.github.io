@@ -1,8 +1,10 @@
 ---
 import HMHeader from '../components/NavBar.astro';
+import HMSidebar from '../components/SideBar.astro';
 import Footer from '../components/Footer.astro';
 import "../styles/global.css";
 import { ClientRouter } from "astro:transitions";
+import { fade } from 'astro:transitions';
 
 
 interface Props {
@@ -13,7 +15,7 @@ const { title } = Astro.props;
 ---
 
 <!doctype html>
-<html transition:animate="fade" lang="en">
+<html transition:animate={fade({duration: "0.9s"})} lang="en">
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="description" content="WiZK About Me" />
@@ -24,12 +26,12 @@ const { title } = Astro.props;
 		<script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
 		<ClientRouter/>
 	</head>
-	<body transition:animate="none" class="bg-fixed bg-black bg-no-repeat bg-cover overflow-x-hidden sm:overflow-hidden" style="background-image:url(/webimg2.jpg);">
+	<body transition:animate={fade({duration: "0.9s"})}  class="bg-fixed bg-black bg-no-repeat bg-cover overflow-x-hidden sm:overflow-hidden" style="background-image:url(/webimg2.jpg);">
 		<div class="h-screen w-screen flex-col">
-			<div class="box-border h-24 w-screen">
+			<div transition:animate="none" class="box-border h-24 w-screen">
 				<HMHeader webTitle='WIZK' hrefAM='/' hrefPF='/portfolio' hrefCM='mailto:wizktec@gmail.com'></HMHeader>
 			</div>
-			<div class="box-border h-[67%] w-screen">
+			<div class="box-border h-4/6 w-screen">
 				<slot />
 			</div>
 			<div class="relative box-border w-screen">
