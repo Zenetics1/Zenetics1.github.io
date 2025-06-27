@@ -26,11 +26,11 @@ const { title } = Astro.props;
 		<ClientRouter/>
 	</head>
 	<body transition:animate={fade({duration: "0.9s"})}  class="bg-fixed bg-black bg-no-repeat bg-cover overflow-x-hidden sm:overflow-hidden" style="background-image:url(/webimg2.jpg);">
+		<div transition:animate="none" class="box-border h-24 w-screen z-50">
+			<HMHeader webTitle='WIZK' hrefAM='/' hrefPF='/portfolio' hrefCM='mailto:wizktec@gmail.com'></HMHeader>
+		</div>
 		<div class="h-screen w-screen flex-col">
-			<div transition:animate="none" class="box-border h-24 w-screen">
-				<HMHeader webTitle='WIZK' hrefAM='/' hrefPF='/portfolio' hrefCM='mailto:wizktec@gmail.com'></HMHeader>
-			</div>
-			<div class="box-border h-4/6 w-screen">
+			<div class="box-border h-4/6 w-screen flex justify-center items-center ">
 				<slot />
 			</div>
 			<div class="relative box-border w-screen">
