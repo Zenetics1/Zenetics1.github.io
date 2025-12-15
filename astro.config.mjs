@@ -7,5 +7,6 @@ export default defineConfig({
     site: 'https://wizk.ca',
     vite: {
         plugins: [tailwindcss()],
-    }
+    },
+    prefetch: true,
 });
