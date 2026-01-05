@@ -1,5 +1,7 @@
 ---
 import "../styles/global.css";
+
+const backup_year = new Date().getFullYear();
 ---
 <footer class="h-auto w-screen p-4 m-0">
             <ul class="flex gap-9 justify-center">
@@ -25,5 +27,9 @@ import "../styles/global.css";
                     </a>
                 </li>
             </ul>
-            <h1 class="text-white flex justify-center p-2 font-bold text-2xl">WizK 2025</h1>
+            <h1 class="text-white flex justify-center p-2 font-bold text-2xl gap-2">WiZK <span id="update_year">{backup_year}</span></h1>
 </footer>
+
+<script is:inline>
+    document.getElementById("update_year").innerText = new Date().getFullYear();
+</script>
