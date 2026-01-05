@@ -23,32 +23,32 @@ const { title } = Astro.props;
 		<title>{title}</title>
         <ClientRouter/>
 	</head>
-	<body transition:animate={fade({duration: "1.0s"})} class="bg-fixed bg-black bg-no-repeat bg-cover overflow-x-hidden">
+	<body transition:animate={fade({duration: "1.0s"})} class="h-screen bg-fixed bg-black bg-no-repeat bg-cover overflow-hidden">
         <div transition:animate="none" class="box-border h-24 w-screen">
             <HMHeader webTitle='WIZK' hrefAM='/' hrefPF='/portfolio' hrefCM='mailto:wizktec@gmail.com'></HMHeader>
         </div>
-        <div>
-            <h1 class="text-white text-center p-5 m-0 text-7xl font-mono">Projects</h1>
-        </div>
-        <div class="h-full flex flex-wrap gap-11 justify-center p-6 w-screen sm:flex-row">
-            <Slider VidLink='https://www.youtube.com/embed/W6iDsVtBoCA?si=vwLcox8POMxaXWMe' header='Arduino Documentary #1'> 
-                This is the first video in a series I am starting where I learn how to use the Arduino, I hope to learn as much as I can about circuitry and electronics.
-            </Slider>
-            <Slider VidLink='https://www.youtube.com/embed/JbIsC9RpNSs?si=t2AgwnW28QyS_yIh' header='Making an Arcade Machine Pt.1'> 
-                Built over the summer of 2024, this is my take on a bartop arcade machine. It utilizes a used monitor and Raspberry Pi 4 2GB to run Retropie, allowing me to run classic arcade emulators.
-            </Slider>
-            <Slider VidLink='https://www.youtube.com/embed/qwvoPNThrJ0?si=2co4z_nNYGWNb0ka' header='Making an Arcade Machine Pt.2'> 
-                Built over the summer of 2024, this is my take on a bartop arcade machine. The final video for the two part series.
-            </Slider>
-            <Slider VidLink='https://www.youtube.com/embed/5aZ5x-nAvVA?si=rCuxRFFsUHO-BRuS' header='Lava Escape'> 
-                This is the first game that I have fully completed and tested. It uses the Java language to create a game where the user is a block trying to escape the rising lava in a volcano.
-            </Slider>
-            <Slider VidLink='https://www.youtube.com/embed/LZaWQyHEUK4?si=mJN-MjZn_-9hBD_c' header='CREATE Design Challenge: BeatTrends'> 
-                This is a Project where I and a group of students used Python data visualization/manipulation libraries to create graphs based on music data collected between the early 90s to 2020.
-            </Slider>
-        </div> 
-        <div>
-            <Footer></Footer>
-        </div>
+        <div class="h-[calc(100vh-6rem)] overflow-auto overscroll-none">
+            <div>
+                 <h1 class="text-white text-center p-5 m-0 text-7xl font-mono">Projects</h1>
+            </div>
+            <div class="h-full flex flex-wrap gap-11 justify-center p-6 w-screen sm:flex-row">
+                <Slider VidLink='https://www.youtube.com/embed/W6iDsVtBoCA?si=vwLcox8POMxaXWMe' header='Arduino Documentary #1'> 
+                    This is the first video in a series I am starting where I learn how to use the Arduino, I hope to learn as much as I can about circuitry and electronics.
+                </Slider>
+                <Slider VidLink='https://www.youtube.com/embed/JbIsC9RpNSs?si=t2AgwnW28QyS_yIh' header='Making an Arcade Machine Pt.1'> 
+                    Built over the summer of 2024, this is my take on a bartop arcade machine. It utilizes a used monitor and Raspberry Pi 4 2GB to run Retropie, allowing me to run classic arcade emulators.
+                </Slider>
+                <Slider VidLink='https://www.youtube.com/embed/qwvoPNThrJ0?si=2co4z_nNYGWNb0ka' header='Making an Arcade Machine Pt.2'> 
+                    Built over the summer of 2024, this is my take on a bartop arcade machine. The final video for the two part series.
+                </Slider>
+                <Slider VidLink='https://www.youtube.com/embed/5aZ5x-nAvVA?si=rCuxRFFsUHO-BRuS' header='Lava Escape'> 
+                    This is the first game that I have fully completed and tested. It uses the Java language to create a game where the user is a block trying to escape the rising lava in a volcano.
+                </Slider>
+                <Slider VidLink='https://www.youtube.com/embed/LZaWQyHEUK4?si=mJN-MjZn_-9hBD_c' header='CREATE Design Challenge: BeatTrends'> 
+                    This is a Project where I and a group of students used Python data visualization/manipulation libraries to create graphs based on music data collected between the early 90s to 2020.
+                </Slider>
+                <Footer></Footer>
+            </div>
+        </div>           
 	</body>
 </html>
