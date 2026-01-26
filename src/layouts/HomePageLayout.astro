@@ -25,16 +25,18 @@ const { title } = Astro.props;
 		<script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
 		<ClientRouter/>
 	</head>
-	<body transition:animate={fade({duration: "0.9s"})}  class="bg-fixed bg-black bg-no-repeat bg-cover overflow-hidden sm:overflow-hidden" style="background-image:url(/webimg2.jpg);">
+	<body transition:animate={fade({duration: "0.9s"})}  class="bg-fixed bg-black bg-no-repeat bg-cover sm:overflow-hidden" style="background-image:url(/webimg2.jpg);">
 		<div transition:animate="none" class="box-border h-24 w-screen z-50">
 			<HMHeader webTitle='WIZK' hrefAM='/' hrefPF='/portfolio' hrefCM='mailto:wizktec@gmail.com'></HMHeader>
 		</div>
 		<div class="h-screen w-screen flex-col">
-			<div class="box-border h-4/6 w-screen flex justify-center items-center ">
+			<div class="p-5 box-border h-screen w-screen flex flex-wrap justify-center items-center">
 				<slot />
-			</div>
-			<div class="relative box-border w-screen">
-				<Footer></Footer>
+				
+				<div class="relative">
+					<Footer></Footer>
+				</div>
+				
 			</div>
 		</div>
 	</body>
