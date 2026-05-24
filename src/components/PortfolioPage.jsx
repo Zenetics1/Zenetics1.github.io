@@ -16,7 +16,6 @@ function PortfolioProjectCard({ category, project }) {
     <article className="portfolio-project-card">
       <div className="portfolio-project-media">
         <div className="portfolio-project-preview">
-          <span className="portfolio-project-chip">{category.eyebrow}</span>
           <div className="portfolio-project-embed-shell">
             <iframe
               className="portfolio-project-embed"

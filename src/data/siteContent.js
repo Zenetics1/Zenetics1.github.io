@@ -16,6 +16,12 @@ export const scenePanels = [
   'panel-large layer-8',
   'panel-square layer-9',
   'panel-wide layer-10',
+  'panel-large layer-11',
+  'panel-square layer-12',
+  'panel-wide layer-13',
+  'panel-large layer-14',
+  'panel-wide layer-15',
+  'panel-square layer-16',
 ]
 
 export const featuredRepoUrl =
