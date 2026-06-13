@@ -30,7 +30,7 @@ export const featuredRepoUrl =
 export const portfolioCategories = [
   {
     slug: 'hobby',
-    label: 'Personal Hobby Projects',
+    label: 'Personal Projects',
     eyebrow: 'Creative Work',
     description: 'Experiments shaped by curiosity and hands-on creation outside classwork.',
     accent: 'portfolio-accent-sand',
