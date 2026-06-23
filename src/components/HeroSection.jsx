@@ -34,7 +34,7 @@ export function HeroSection() {
             Portfolio
           </a>
           <a className="secondary-button" href="mailto:spitfirexigames@gmail.com">
-            Contact us
+            Contact Me
           </a>
         </div>
       </div>

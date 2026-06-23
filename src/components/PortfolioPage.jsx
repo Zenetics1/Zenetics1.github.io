@@ -73,7 +73,7 @@ export function PortfolioPage({ activeCategory }) {
         <p className="section-label">Portfolio Directory</p>
         <h2>Check out my projects!</h2>
         <p className="portfolio-description">
-          Take a look at some of my hobby, software, and hardware projects.
+          Take a look at some of my personal, software, and hardware projects.
         </p>
       </div>
 
