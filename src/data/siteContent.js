@@ -64,6 +64,18 @@ export const portfolioCategories = [
         summary: 'This is a Project where I and a group of students used Python data visualization/manipulation libraries to create graphs based on music data collected between the early 90s to 2020.',
         videoUrl: 'https://www.youtube.com/embed/LZaWQyHEUK4',
       },
+      {
+        title: '6502 Emulator',
+        summary: 'A C emulator for the 6502 8-bit microprocessor, verified for cycle-accurate instruction behavior against the SingleStepTests JSON test suite.',
+        linkUrl: 'https://github.com/Zenetics1/6502_Emulator',
+        linkLabel: 'View on GitHub',
+      },
+      {
+        title: 'Notion Python Stock Tracker',
+        summary: 'A Python script that tracks stocks and other investment opportunities through a Notion page, using the Twelve Data and Notion APIs to pull live price, volume, and change data and keep a watchlist database automatically updated.',
+        linkUrl: 'https://github.com/Zenetics1/Notion_Python_Stock_Tracker',
+        linkLabel: 'View on GitHub',
+      },
     ],
   },
   {
@@ -77,6 +89,18 @@ export const portfolioCategories = [
         title: 'Arduino Documentary #1',
         summary: 'This is the first video in a series I am starting where I learn how to use the Arduino, I hope to learn as much as I can about circuitry and electronics.',
         videoUrl: 'https://www.youtube.com/embed/W6iDsVtBoCA',
+      },
+      {
+        title: '10G Ethernet Parser: Block Sync Module',
+        summary: "Contributed the Block Sync module to UWASIC's 10G Ethernet Parser project, implementing the state machine and header counters that detect valid 66b block boundaries in the PCS layer, then following up with logic and timing fixes from PR review.",
+        linkUrl: 'https://github.com/UW-ASIC/10G-Ethernet-Parser/pull/3',
+        linkLabel: 'View Pull Request',
+      },
+      {
+        title: 'UWASIC Onboarding',
+        summary: 'My onboarding project for UWASIC, the University of Waterloo student ASIC design team, learning the Verilog-to-silicon workflow through the TinyTapeout project template, cocotb testbenches, and the OpenLane-based GDS build pipeline.',
+        linkUrl: 'https://github.com/Zenetics1/onboarding_start',
+        linkLabel: 'View on GitHub',
       },
     ],
   },

@@ -16,18 +16,34 @@ function PortfolioProjectCard({ category, project }) {
     <article className="portfolio-project-card">
       <div className="portfolio-project-media">
         <div className="portfolio-project-preview">
-          <div className="portfolio-project-embed-shell">
-            <iframe
-              className="portfolio-project-embed"
-              src={project.videoUrl}
-              title={project.title}
-              loading="lazy"
-              sandbox="allow-scripts allow-same-origin allow-presentation allow-popups allow-popups-to-escape-sandbox"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-              referrerPolicy="strict-origin-when-cross-origin"
-              allowFullScreen
-            />
-          </div>
+          {project.videoUrl ? (
+            <div className="portfolio-project-embed-shell">
+              <iframe
+                className="portfolio-project-embed"
+                src={project.videoUrl}
+                title={project.title}
+                loading="lazy"
+                sandbox="allow-scripts allow-same-origin allow-presentation allow-popups allow-popups-to-escape-sandbox"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerPolicy="strict-origin-when-cross-origin"
+                allowFullScreen
+              />
+            </div>
+          ) : (
+            <div className="portfolio-project-link-shell">
+              <span className="portfolio-project-link-icon" aria-hidden="true">
+                {'</>'}
+              </span>
+              <a
+                className="portfolio-project-link-button"
+                href={project.linkUrl}
+                target="_blank"
+                rel="noreferrer"
+              >
+                {project.linkLabel || 'View on GitHub'}
+              </a>
+            </div>
+          )}
         </div>
       </div>
 

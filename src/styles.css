@@ -643,6 +643,47 @@ h1 {
   border: 0;
 }
 
+.portfolio-project-link-shell {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 14px;
+  border-radius: 14px;
+  background: rgba(255, 248, 224, 0.06);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.14);
+}
+
+.portfolio-project-link-icon {
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 1.8rem;
+  color: rgba(255, 248, 224, 0.5);
+}
+
+.portfolio-project-link-button {
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  padding: 10px 22px;
+  border-radius: 999px;
+  border: 1px solid rgba(255, 248, 224, 0.28);
+  color: rgba(255, 248, 224, 0.92);
+  background: rgba(255, 248, 224, 0.08);
+  transition:
+    transform 160ms ease,
+    border-color 160ms ease,
+    background 160ms ease;
+}
+
+.portfolio-project-link-button:hover {
+  transform: translateY(-2px);
+  border-color: rgba(255, 248, 224, 0.5);
+  background: rgba(255, 248, 224, 0.14);
+}
+
 .portfolio-project-copy {
   flex: 1;
   margin: 0 10px 0;
@@ -943,7 +984,8 @@ h1 {
     padding: 0;
   }
 
-  .portfolio-project-embed-shell {
+  .portfolio-project-embed-shell,
+  .portfolio-project-link-shell {
     border-radius: 12px;
   }
 
