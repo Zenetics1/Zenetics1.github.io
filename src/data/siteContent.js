@@ -32,17 +32,17 @@ export const portfolioCategories = [
     slug: 'personal',
     label: 'Personal Projects',
     eyebrow: 'Creative Work',
-    description: 'Experiments and hands-on creation outside classwork.',
+    description: 'Experiments and hands-on creations outside classwork.',
     accent: 'portfolio-accent-sand',
     projects: [
       {
         title: 'Making an Arcade Machine Pt.1',
-        summary: 'Built over the summer of 2024, this is my take on a bartop arcade machine. It utilizes a used monitor and Raspberry Pi 4 2GB to run Retropie, allowing me to run classic arcade emulators.',
+        summary: 'Built over the summer of 2024, this is my take on a bartop arcade machine. It utilizes a Raspberry Pi 4 2GB to run Retropie, allowing me to run classic arcade emulators.',
         videoUrl: 'https://www.youtube.com/embed/JbIsC9RpNSs',
       },
       {
         title: 'Making an Arcade Machine Pt.2',
-        summary: 'Built over the summer of 2024, this is my take on a bartop arcade machine. The final video for the two part series.',
+        summary: 'Built over the summer of 2024, this is my take on a bartop arcade machine. The final video of the two part series.',
         videoUrl: 'https://www.youtube.com/embed/qwvoPNThrJ0',
       },
     ],
@@ -51,7 +51,7 @@ export const portfolioCategories = [
     slug: 'programming',
     label: 'Programming Projects',
     eyebrow: 'Software Builds',
-    description: 'Code-first projects focused on interfaces, tooling, automation, and practical problem solving.',
+    description: 'Coding projects focused on tooling, automation, and practical problem solving.',
     accent: 'portfolio-accent-amber',
     projects: [
       {
@@ -66,13 +66,13 @@ export const portfolioCategories = [
       },
       {
         title: '6502 Emulator',
-        summary: 'A C emulator for the 6502 8-bit microprocessor, verified for cycle-accurate instruction behavior against the SingleStepTests JSON test suite.',
+        summary: 'A C emulator for the 6502 8-bit microprocessor, verified for instruction-accurate behavior against the SingleStepTests JSON test suite.',
         linkUrl: 'https://github.com/Zenetics1/6502_Emulator',
         linkLabel: 'View on GitHub',
       },
       {
         title: 'Notion Python Stock Tracker',
-        summary: 'A Python script that tracks stocks and other investment opportunities through a Notion page, using the Twelve Data and Notion APIs to pull live price, volume, and change data and keep a watchlist database automatically updated.',
+        summary: 'A Python script that tracks investment opportunities through a Notion page, using the Twelve Data API to pull live prices and volumes, keeping the watchlist database automatically updated.',
         linkUrl: 'https://github.com/Zenetics1/Notion_Python_Stock_Tracker',
         linkLabel: 'View on GitHub',
       },
@@ -82,23 +82,23 @@ export const portfolioCategories = [
     slug: 'hardware',
     label: 'Hardware Projects',
     eyebrow: 'Systems + Circuits',
-    description: 'Physical builds spanning embedded systems, digital design, firmware, and device prototyping.',
+    description: 'Builds spanning Arduino circuitry, digital design, and device prototyping.',
     accent: 'portfolio-accent-olive',
     projects: [
       {
         title: 'Arduino Documentary #1',
-        summary: 'This is the first video in a series I am starting where I learn how to use the Arduino, I hope to learn as much as I can about circuitry and electronics.',
+        summary: 'This is the first video where I experiement with the Arduino UNO, I hope to learn as much as I can about circuitry and electronics.',
         videoUrl: 'https://www.youtube.com/embed/W6iDsVtBoCA',
       },
       {
         title: '10G Ethernet Parser: Block Sync Module',
-        summary: "Contributed the Block Sync module to UWASIC's 10G Ethernet Parser project, implementing the state machine and header counters that detect valid 66b block boundaries in the PCS layer, then following up with logic and timing fixes from PR review.",
-        linkUrl: 'https://github.com/UW-ASIC/10G-Ethernet-Parser/pull/3',
-        linkLabel: 'View Pull Request',
+        summary: "Contributed the Block Sync module to UWASIC's 10G Ethernet Parser project, implementing the state machine and header counters that detect valid 66b block boundaries in the PCS layer.",
+        linkUrl: 'https://github.com/Zenetics1/10G-Ethernet-Parser',
+        linkLabel: 'View on Github',
       },
       {
         title: 'UWASIC Onboarding',
-        summary: 'My onboarding project for UWASIC, the University of Waterloo student ASIC design team, learning the Verilog-to-silicon workflow through the TinyTapeout project template, cocotb testbenches, and the OpenLane-based GDS build pipeline.',
+        summary: 'My onboarding project for UWASIC, the University of Waterloo student ASIC design team, learning the Verilog-to-silicon workflow through the TinyTapeout project template and cocotb testbenches.',
         linkUrl: 'https://github.com/Zenetics1/onboarding_start',
         linkLabel: 'View on GitHub',
       },
